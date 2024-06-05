@@ -4,8 +4,10 @@ public class Addition {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Addition");
-
+		int a =2;
+		int b= 3;
+		int c = a+b;
+		System.out.println("Addition of a and b is "+c);
 	}
 
 }
