@@ -10,6 +10,7 @@ public class Addition {
 		int d = b-a;
 		System.out.println("Addition of a and b is "+c);
 		System.out.println("Substraction of a from b is "+d);
+		System.out.println("Multiplication of a from b is "+ (a*b));
 		
 	}
 
