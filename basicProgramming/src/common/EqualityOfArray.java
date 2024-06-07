@@ -1,4 +1,4 @@
-package starPatterns;
+package common;
 
 public class EqualityOfArray {
 	

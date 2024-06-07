@@ -1,9 +1,6 @@
-package starPatterns;
+package common;
 
 public class Triangle {
-	public static void triangle () {
-
-	}
 
 	public static void main(String[] args) {
 		
