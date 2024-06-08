@@ -4,19 +4,19 @@ import java.util.*;
 
 public class RemoveDuplicateIntUsingCollections {
 	static List<Integer> l;
-	
+
 	public static void main (String[] args) {
 		removeDupli();
 		countAndPrintDupli();
 	}
-	
+
 	public static void removeDupli() {
 		/*
 		 * 1. Create an array of integer with duplicate characters
 		 * 2. Use set collection
 		 * 3. Use iterator to print the integers
 		 */
-		
+
 		l = new ArrayList<Integer>();
 		for(int i=0; i<50; i++){
 			l.add(i);			
@@ -40,7 +40,6 @@ public class RemoveDuplicateIntUsingCollections {
 		while(se.hasNext()) {
 			System.out.print(se.next()+" ");
 		}
-		
 	}
 
 	public static void countAndPrintDupli() {
@@ -59,7 +58,6 @@ public class RemoveDuplicateIntUsingCollections {
 			if(m.get(b)>1) {
 				System.out.println("Integer "+"'"+b+"' appears for "+m.get(b)+" times.");
 			}
-			
 		}
 	}
 }
