@@ -24,11 +24,19 @@ public class FilterMethod_EvenNumber {
 		evenNum = listOfIntegers().stream().filter(n -> n%g==0).collect(Collectors.toList());
 		return evenNum;
 	}
+	
+	//Instead of returning the value print the value using stream.
+	public static void printvalue() {
+		listOfIntegers().stream().filter(n -> n%3==0).forEach(n -> System.out.print(n+", "));
+	}
 
 	public static void main (String[] args) {
 		System.out.println("Even Numbers = " + evenNumber());
 		System.out.println("----------------------------------------------------------------------------");
 		System.out.println("Numbers divisible by input parameter = "+ genericMethod(7));
+		System.out.println("----------------------------------------------------------------------------");
+		System.out.print("Numbers divisible by 3 = ");
+		printvalue();
 	}
 
 }
