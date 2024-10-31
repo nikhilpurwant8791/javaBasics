@@ -11,13 +11,17 @@ public class MapFunction {
 	int employeeId;
 	int employeeSalary;
 
+	MapFunction(){
+
+	}
+
 	MapFunction(String employeeName, int employeeId, int employeeSalary){
 		this.employeeName = employeeName;
 		this.employeeId=employeeId;
 		this.employeeSalary=employeeSalary;
 	}
 
-	public static List<String> filterWithMapMethod() {
+	public List<String> filterWithMapMethod() {
 		/*
 		 * 1. Created the collector to add the employee details
 		 * 2. create ArrayList by Adding all details
@@ -40,7 +44,6 @@ public class MapFunction {
 
 	public static List<String> transformNamesToUpperCase() {
 		List <String> names = Arrays.asList("nikhil", "mayur", "pooja", "spruha");
-
 		//convert all names to uppercase
 		List <String> upperCaseName= new ArrayList<String>();
 		upperCaseName = names.stream().map(n -> n.toUpperCase()).collect(Collectors.toList());
@@ -48,8 +51,9 @@ public class MapFunction {
 	}
 
 	public static void main (String[] args) {
+		MapFunction employee = new MapFunction();
 		System.out.println("Print Names in UpperCase = " + transformNamesToUpperCase());
-		System.out.println("Print only Employee Names = " + filterWithMapMethod());
+		System.out.println("Print only Employee Names = " + employee.filterWithMapMethod());
 	}
 
 }
