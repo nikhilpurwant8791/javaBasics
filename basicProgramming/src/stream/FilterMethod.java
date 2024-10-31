@@ -31,10 +31,10 @@ public class FilterMethod {
 	}
 
 	//Multiple condition
-public static List<Integer> multipleConditions() {
-	List<Integer> evenNumberUpto50 = listOfIntegers().stream().filter(n -> n%2==0 && n<50).collect(Collectors.toList());
-	return evenNumberUpto50;
-}
+	public static List<Integer> multipleConditions() {
+		List<Integer> evenNumberUpto50 = listOfIntegers().stream().filter(n -> n%2==0 && n<50).collect(Collectors.toList());
+		return evenNumberUpto50;
+	}
 
 	public static void main (String[] args) {
 		System.out.println("Even Numbers = " + evenNumber());
