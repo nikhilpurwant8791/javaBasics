@@ -28,6 +28,7 @@ public class MapFunction {
 		 * 3. Apply filter and map function
 		 * 4. store the filterd name in another list
 		 * 5. Print 
+		 * Note: map()return the single value
 		 */
 		List <MapFunction> employeeList = new ArrayList<MapFunction>();
 		employeeList.add(new MapFunction("Nikhil", 101, 20000));
